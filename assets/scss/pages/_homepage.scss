@@ -1,0 +1,15 @@
+html, body {
+    background: $background;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.highlight {
+    color: $highlight;
+}
+

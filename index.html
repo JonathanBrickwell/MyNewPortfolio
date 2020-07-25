@@ -4,8 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kristijan Fištrek | Web Portfolio</title>
+
+    <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
+
+    <header>
+        <div class="container wrapper">
+            <div class="logo">
+                <img src="assets/img/logo/logo.svg" width="50" alt="">
+            </div>
+            <div class="menu">
+                <div id="myNav" class="overlay">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="overlay-content">
+                        <a href="#">About</a>
+                        <a href="#">Services</a>
+                        <a href="#">Clients</a>
+                        <a href="#">Contact</a>
+                    </div>
+                </div>
+                <div onclick="openNav()">
+                    <span class="menu-bars one"></span>
+                    <span class="menu-bars two"></span>
+                    <span class="menu-bars three"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="column text-center">
+                <h1 class="main-title">
+                    <span class="highlight">&lt;</span>
+                    Kristijan Fištrek
+                    <span class="highlight">/&gt;</span>
+                </h1>
+            </div>
+        </div>
+    </div>
     
+    <footer>
+       <div class="container wrapper">
+            <div class=""></div>
+            <div class="social-media">
+                <img src="assets/img/social-media/whatsapp.png" alt="WhatsApp Social Icon" width="40">
+                <img src="assets/img/social-media/instagram-sketched.png" alt="Instagram Social Icon" width="40">
+                <img src="assets/img/social-media/linkedin.png" alt="LinkedIn Social Icon" width="40">
+                <img src="assets/img/social-media/facebook (2).png" alt="Facebook Social Icon" width="40">
+            </div>
+       </div> 
+    </footer>
+
+    <!-- Components -->
+    <script src="assets/js/components/header.js"></script>
 </body>
 </html>
