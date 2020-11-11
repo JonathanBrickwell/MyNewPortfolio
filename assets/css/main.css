@@ -139,120 +139,167 @@ hr {
   transform: none; }
 
 button {
-  padding: 5px 40px 5px 40px;
+  width: 160px;
+  height: 40px;
   border-radius: 0px;
   border: 2px solid #EAF2F2;
   background: transparent;
   color: #EAF2F2;
   font-weight: bold;
-  font-size: 22px; }
-
-.container {
-  max-width: 100%; }
-
-.row {
-  display: flex;
-  flex-direction: row;
-  align-items: center; }
-
-.column {
-  flex-basis: 100%;
-  padding: 15px;
-  background: #131313; }
-
-.wrapper {
-  padding: 15px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between; }
-
-.w-100 {
-  width: 100%; }
-
-.w-50 {
-  width: 50%; }
-
-.h-50 {
-  height: 50%; }
-
-.h-100 {
-  height: 100vh; }
-
-.w-25 {
-  width: 25%; }
-
-.h-25 {
-  height: 25%; }
-
-.text-center {
+  font-size: 22px;
+  text-transform: uppercase;
   text-align: center; }
 
-.justify-center {
-  justify-content: center; }
+button a {
+  text-decoration: none; }
+
+button:hover {
+  background: #EAF2F2;
+  cursor: pointer; }
+
+button:hover > a {
+  color: #131313; }
+
+.main-title {
+  text-align: center; }
+
+.container {
+  width: 80%;
+  padding: 50px 0;
+  margin: 50px auto;
+  position: relative;
+  overflow: hidden; }
+
+.container:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -1px;
+  width: 2px;
+  height: 100%;
+  background: #CCD1D9;
+  z-index: 1; }
+
+.timeline-block {
+  width: -webkit-calc(50% + 8px);
+  width: -moz-calc(50% + 8px);
+  width: calc(50% + 8px);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-box-pack: justify;
+  justify-content: space-between;
+  clear: both; }
+
+.timeline-block-right {
+  float: right; }
+
+.timeline-block-left {
+  float: left;
+  direction: rtl; }
+
+.marker {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid #F5F7FA;
+  background: #BFBCAA;
+  margin-top: 10px;
+  z-index: 9999; }
+
+.timeline-content {
+  width: 95%;
+  padding: 0 15px;
+  color: #666; }
+
+.timeline-content h3 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 25px;
+  font-weight: 500; }
+
+.timeline-content span {
+  font-size: 15px;
+  color: #a4a4a4; }
+
+.timeline-content p {
+  font-size: 14px;
+  line-height: 1.5em;
+  word-spacing: 1px;
+  color: #888; }
+
+@media screen and (max-width: 768px) {
+  .container:before {
+    left: 8px;
+    width: 2px; }
+  .timeline-block {
+    width: 100%;
+    margin-bottom: 30px; }
+  .timeline-block-right {
+    float: none; }
+  .timeline-block-left {
+    float: none;
+    direction: ltr; } }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  padding: 20px; }
 
 section {
+  height: 100%; }
+
+.flex-grid {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap; }
+  height: 100%;
+  align-items: center;
+  text-align: center; }
 
-article,
-aside {
-  flex-basis: 100%; }
+.flex-grid .col {
+  flex: 1; }
 
-.mb-2 {
-  margin-bottom: 20px; }
+.flex-grid-thirds {
+  display: flex;
+  justify-content: space-between; }
 
-.mt-2 {
-  margin-top: 20px; }
+.flex-grid-thirds .col {
+  width: 32%; }
+
+@media (min-width: 320px) and (max-width: 726px) {
+  .flex-grid,
+  .flex-grid-thirds {
+    display: block; }
+    .flex-grid .col,
+    .flex-grid-thirds .col {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+  h1 {
+    font-size: 2.7rem; }
+  #menuToggle {
+    margin-left: 10px;
+    top: 25px; }
+  img {
+    display: none; }
+  #portfolio {
+    margin-top: 10px; } }
 
 .mt-1 {
   margin-top: 10px; }
 
-.mrl-10 {
-  margin: 0 10px 0 10px; }
+.mt-2 {
+  margin-top: 20px; }
 
-@media screen and (min-width: 320px) and (max-width: 768px) {
-  .row {
-    flex-direction: column; }
-  .column-mobile {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly; }
-  h1 {
-    font-size: 2.1rem; }
-  h2 {
-    font-size: 1.8rem; }
-  .column-centered {
-    padding: 0 5% 0 5%; }
-  .img {
-    display: none; } }
-
-@media screen and (min-width: 800px) {
-  .column {
-    flex: 1; }
-  ._25 {
-    flex: 2.5; }
-  ._55 {
-    flex: 5.5; }
-  ._20 {
-    flex: 2; }
-  aside {
-    flex: 2.5; }
-  article {
-    flex: 7.5; }
-  .column-centered {
-    padding: 0 25% 0 25%; }
-  .img {
-    height: 700px; } }
-
-/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
-@media screen and (max-height: 450px) {
-  .overlay a {
-    font-size: 20px; }
-  .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px; } }
+.mt-3 {
+  margin-top: 30px; }
 
 html, body {
   background: #131313;

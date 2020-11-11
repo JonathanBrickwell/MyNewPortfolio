@@ -1,9 +1,25 @@
 button {
-    padding: 5px 40px 5px 40px;
+    width: 160px;
+    height: 40px;
     border-radius: 0px;
     border: 2px solid #EAF2F2;
     background: transparent;
     color: #EAF2F2;
     font-weight: bold;
     font-size: 22px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+button a {
+    text-decoration: none;
+}
+
+button:hover {
+    background: #EAF2F2;
+    cursor: pointer;
+}
+
+button:hover>a {
+    color: #131313;
 }

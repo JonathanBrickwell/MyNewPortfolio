@@ -1,75 +1,32 @@
-@media screen and (min-width:320px) and (max-width: 768px) {
+@media (min-width:320px) and (max-width:726px) {
 
-  .row {
-    flex-direction: column;
-  }
-
-  .column-mobile {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-  }
+  .flex-grid,
+    .flex-grid-thirds {
+      display: block;
+      .col {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+    }
 
   h1 {
-    font-size: 2.1rem;
+    font-size: 2.7rem;
   }
 
-  h2 {
-    font-size: 1.8rem;
+  #menuToggle {
+    margin-left: 10px;
+    top: 25px;
   }
 
-  .column-centered {
-    padding: 0 5% 0 5%;
-  }
-
-  .img {
+  img {
     display: none;
   }
-}
 
-@media screen and (min-width: 800px) {
-
-    .column {
-      flex: 1;
-    }
-
-    ._25 {
-        flex: 2.5;
-    }
-
-    ._55 {
-        flex: 5.5;
-    }
-
-    ._20 {
-        flex: 2;
-    }
-
-    aside {
-        flex: 2.5;
-    }
-    
-    article {
-        flex: 7.5;
-    } 
-
-    .column-centered {
-      padding: 0 25% 0 25%;
-    }
-
-    .img {
-      height: 700px;
-    }
-  
-}
-
-  
-  /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
-  @media screen and (max-height: 450px) {
-    .overlay a {font-size: 20px}
-    .overlay .closebtn {
-      font-size: 40px;
-      top: 15px;
-      right: 35px;
-    }
+  #portfolio {
+    margin-top: 10px;
   }
+}

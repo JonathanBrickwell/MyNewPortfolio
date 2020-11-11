@@ -1,87 +1,42 @@
-// Basic Grid Elements
+// START BASIC HTML, BODY SETTINGS 
 
-.container {
-    max-width: 100%;
+* {
+    box-sizing: border-box;
 }
 
-.row {
-    display: flex;
-    flex-direction: row;
-    align-items: center
-}
-  
-.column {
-    flex-basis: 100%;
-    padding: 15px;
-    background: $background;;
-}
-
-.wrapper {
-    padding: 15px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-// Width & Height 
-
-.w-100 {
-    width: 100%;
-}
-
-.w-50 {
-    width: 50%;
-}
-
-.h-50 {
-    height: 50%;
-}
-
-.h-100 {
-    height: 100vh;
-  }
-
-.w-25 {
-    width: 25%;
-}
-
-.h-25 {
-    height: 25%;
-}
-
-// Centering
-
-.text-center {
-    text-align: center;
-}
-
-.justify-center {
-    justify-content: center;
+body {
+    padding: 20px;
 }
 
 section {
+    height: 100%;
+}
+
+// END BASIC HTML, BODY SETTINGS
+
+// START FLEX GRID
+
+.col {
+}
+
+.flex-grid {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    height: 100%;
+    align-items: center;
+    text-align: center;
 }
 
-article,
-aside {
-    flex-basis: 100%;
+.flex-grid .col {
+    flex: 1;
 }
 
-.mb-2 {
-    margin-bottom: 20px;
+.flex-grid-thirds {
+    display: flex;
+    justify-content: space-between;
 }
 
-.mt-2 {
-    margin-top: 20px;
+.flex-grid-thirds .col {
+    width: 32%;
 }
 
-.mt-1 {
-    margin-top: 10px;
-}
-
-.mrl-10 {
-    margin: 0 10px 0 10px;
-}
+// END FLEX GRID
