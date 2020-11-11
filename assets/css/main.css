@@ -53,6 +53,10 @@ p {
   line-height: 1.5em;
   color: #EAF2F2; }
 
+hr {
+  color: rgba(234, 242, 242, 0.5);
+  width: 200px; }
+
 #menuToggle {
   display: block;
   position: fixed;
@@ -198,6 +202,12 @@ aside {
 .mb-2 {
   margin-bottom: 20px; }
 
+.mt-2 {
+  margin-top: 20px; }
+
+.mt-1 {
+  margin-top: 10px; }
+
 .mrl-10 {
   margin: 0 10px 0 10px; }
 
@@ -231,7 +241,9 @@ aside {
   article {
     flex: 7.5; }
   .column-centered {
-    padding: 0 25% 0 25%; } }
+    padding: 0 25% 0 25%; }
+  .img {
+    height: 700px; } }
 
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
 @media screen and (max-height: 450px) {
