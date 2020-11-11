@@ -11,5 +11,10 @@ body {
 
 .highlight {
     color: $highlight;
+    font-weight: bold;
+}
+
+.inline {
+    display: inline-block;
 }
 

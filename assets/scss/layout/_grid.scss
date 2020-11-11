@@ -2,19 +2,18 @@
 
 .container {
     max-width: 100%;
-    margin: 0 auto;
 }
 
 .row {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    align-items: center
 }
   
 .column {
     flex-basis: 100%;
     padding: 15px;
-    background: $background;
+    background: $background;;
 }
 
 .wrapper {
@@ -30,10 +29,6 @@
     width: 100%;
 }
 
-.h-100 {
-    height: 100%;
-}
-
 .w-50 {
     width: 50%;
 }
@@ -41,6 +36,10 @@
 .h-50 {
     height: 50%;
 }
+
+.h-100 {
+    height: 100vh;
+  }
 
 .w-25 {
     width: 25%;
@@ -69,4 +68,12 @@ section {
 article,
 aside {
     flex-basis: 100%;
+}
+
+.mb-2 {
+    margin-bottom: 20px;
+}
+
+.mrl-10 {
+    margin: 0 10px 0 10px;
 }

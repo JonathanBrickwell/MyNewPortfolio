@@ -3,89 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kristijan Fištrek | Web Portfolio</title>
+    <title>Omramøryth | Official Website</title>
 
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link type="text/css" rel="stylesheet" href="assets/css/main.css?v1.0">
 
-    <!-- FAVICON -->
-    <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="assets/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="assets/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="assets/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="assets/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="assets/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="assets/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="assets/favicon/manifest.json">
+    <!-- Basic Meta Tags -->
+    <meta name="description" content="Official website for a lovecraftian inspired blackened death metal band Omramøryth. 'The Ritual' EP available December 16th 2020. ">
+    <meta name="author" content="Omramøryth Official">
+    <meta name="keywords" content="death metal croatia, metal varaždin, symphonic death metal, croatian metal band, omramoryth, lovecraft">
+    <meta name="robots" content="index, follow">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:title" content="Omramøryth - Official Website">
+    <meta property="og:description" content="Official website for a lovecraftian inspired blackened death metal band Omramøryth. 'The Ritual' EP is available now on all streaming services!">
+    <meta property="og:image" content="https://omramoryth.com/assets/img/meta-img/meta-img.jpeg">
+    <meta property="og:url" content="https://omramoryth.com/index.html">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:title" content="Omramøryth - Official Website">
+    <meta name="twitter:description" content="Official website for a lovecraftian inspired blackened death metal band Omramøryth. 'The Ritual' EP is available now on all streaming services!">
+    <meta name="twitter:image" content="https://omramoryth.com/assets/img/meta-img/meta-img.jpeg">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="assets/img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/favicon/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
+    <meta name="msapplication-TileImage" content="assets/img/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 </head>
 <body>
 
-    <header>
-        <div class="container wrapper">
-            <div class="logo">
-                <img src="assets/img/logo/logo.svg" width="50" alt="">
-            </div>
-            <div class="menu">
-                <div id="myNav" class="overlay">
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                    <div class="overlay-content">
-                        <a href="#">About</a>
-                        <a href="#">Services</a>
-                        <a href="#">Projects</a>
-                        <a href="#">Blog</a>
-                    </div>
-                </div>
-                <div onclick="openNav()">
-                    <span class="menu-bars one"></span>
-                    <span class="menu-bars two"></span>
-                    <span class="menu-bars three"></span>
-                </div>
-            </div>
+    <nav role="navigation">
+        <div id="menuToggle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+          <ul id="menu">
+            <a href="#"><li>Home</li></a>
+            <a href="#"><li>About</li></a>
+            <a href="#"><li>Projects</li></a>
+            <a href="#"><li>Blog</li></a>
+            <a href="#"><li>Contact</li></a>
+          </ul>
         </div>
-    </header>
+      </nav>
 
     <div class="container">
-        <div class="row">
+        <div class="row h-100">
             <div class="column text-center">
-                <h1 class="main-title">
-                    <span class="highlight">&lt;</span>
-                        Kristijan Fištrek
-                    <span class="highlight">/&gt;</span>
-                </h1>
+                <h1>Kristijan <span class="highlight">Fištrek</span></h1>
+                <p><span class="highlight">Web</span> & <span class="highlight">Android</span> Developer</p>
             </div>
         </div>
     </div>
-    
-    <footer>
-       <div class="container wrapper">
-            <div class=""></div>
-            <div class="social-media">
-                <a href="tel:+385994634515" target="_blank">
-                    <img src="assets/img/social-media/whatsapp.png" alt="WhatsApp Social Icon" width="35">
-                </a>
-                <a href="https://www.instagram.com/thisdotdev/" target="_blank">
-                    <img src="assets/img/social-media/instagram-sketched.png" alt="Instagram Social Icon" width="35">
-                </a>
-                <a href="https://www.linkedin.com/in/kristijan-fi%C5%A1trek/" target="_blank">
-                    <img src="assets/img/social-media/linkedin.png" alt="LinkedIn Social Icon" width="35">
-                </a>
-                <a href="https://www.facebook.com/kristijan.fistrek/" target="_blank">
-                    <img src="assets/img/social-media/facebook (2).png" alt="Facebook Social Icon" width="35">
-                </a>
-            </div>
-       </div> 
-    </footer>
 
-    <!-- Components -->
-    <script src="assets/js/components/header.js"></script>
-    <script src="assets/js/components/title-animation.js"></script>
+    <!-- Scripts -->
+
 </body>
 </html>
