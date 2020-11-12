@@ -7,7 +7,7 @@
     font-display: swap;
 }
 
-h1, h2, h3, h4, h5, h6, #menu {
+h1, h2, h3, h4, h5, h6, #menu, .num {
     font-family: 'Prompt', sans-serif;
     color: $textColor;
     font-weight: bold;
@@ -30,8 +30,11 @@ a {
     color: transparent !important;
 }
 
-p {
+p, .tag, .date, input, textarea {
     font-family: 'Montserrat', sans-serif;
+}
+
+p {
     font-size: 18px;
     line-height: 1.5em;
     color: $textColor;

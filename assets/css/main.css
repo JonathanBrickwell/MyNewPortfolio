@@ -29,7 +29,7 @@ footer, header, hgroup, menu, nav, section {
   font-weight: normal;
   font-display: swap; }
 
-h1, h2, h3, h4, h5, h6, #menu {
+h1, h2, h3, h4, h5, h6, #menu, .num {
   font-family: 'Prompt', sans-serif;
   color: #EAF2F2;
   font-weight: bold;
@@ -47,8 +47,10 @@ a {
 .transparent {
   color: transparent !important; }
 
+p, .tag, .date, input, textarea {
+  font-family: 'Montserrat', sans-serif; }
+
 p {
-  font-family: 'Montserrat', sans-serif;
   font-size: 18px;
   line-height: 1.5em;
   color: #EAF2F2; }
@@ -160,6 +162,9 @@ button:hover {
 button:hover > a {
   color: #131313; }
 
+form button:hover {
+  color: #131313; }
+
 .main-title {
   text-align: center; }
 
@@ -245,6 +250,160 @@ button:hover > a {
     float: none;
     direction: ltr; } }
 
+.cards-wrapper {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 4rem;
+  padding: 1rem;
+  margin: 0 auto;
+  width: max-content; }
+
+.card {
+  --bg-filter-opacity: 0.8;
+  background-image: linear-gradient(rgba(0, 0, 0, var(--bg-filter-opacity)), rgba(0, 0, 0, var(--bg-filter-opacity))), var(--bg-img);
+  height: 20em;
+  width: 15em;
+  font-size: 1.5em;
+  color: white;
+  border-radius: 1em;
+  padding: 1em;
+  display: flex;
+  align-items: flex-end;
+  background-size: contain;
+  background-position: center center;
+  transition: all, var(--transition-time);
+  position: relative;
+  overflow: hidden;
+  border: 10px solid #ccc;
+  text-decoration: none; }
+
+.card:hover {
+  transform: rotate(0); }
+
+.card h1 {
+  margin: 0;
+  font-size: 1.5em;
+  line-height: 1.2em; }
+
+.card p {
+  font-size: 0.75em;
+  margin-top: 0.5em;
+  line-height: 2em; }
+
+.card .tags {
+  display: flex;
+  color: #131313; }
+
+.card .tags .tag {
+  font-size: 0.75em;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 0.3rem;
+  padding: 0 0.5em;
+  margin-right: 0.5em;
+  line-height: 1.5em;
+  transition: all, var(--transition-time); }
+
+.card:hover .tags .tag {
+  color: #ffffff; }
+
+.card .date {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 0.75em;
+  padding: 1em;
+  line-height: 1em;
+  opacity: .8; }
+
+.card:before, .card:after {
+  content: '';
+  transform: scale(0);
+  transform-origin: top left;
+  border-radius: 50%;
+  position: absolute;
+  left: -50%;
+  top: -50%;
+  z-index: -5;
+  transition: all, var(--transition-time);
+  transition-timing-function: ease-in-out; }
+
+.card:before {
+  width: 250%;
+  height: 250%; }
+
+.card:after {
+  width: 250%;
+  height: 250%; }
+
+.card:hover:before, .card:hover:after {
+  transform: scale(1); }
+
+.card-grid-space .num {
+  font-size: 3em;
+  margin-bottom: 1.2rem;
+  margin-left: 1rem; }
+
+.info {
+  font-size: 1.2em;
+  display: flex;
+  padding: 1em 3em;
+  height: 3em; }
+
+.info img {
+  height: 3em;
+  margin-right: 0.5em; }
+
+.info h1 {
+  font-size: 1em;
+  font-weight: normal; }
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1285px) {
+  .cards-wrapper {
+    grid-template-columns: 1fr 1fr; } }
+
+@media screen and (max-width: 900px) {
+  .cards-wrapper {
+    grid-template-columns: 1fr; }
+  .info {
+    justify-content: center; }
+  .card-grid-space .num {
+    margin-left: 0;
+    text-align: center; } }
+
+@media screen and (max-width: 500px) {
+  .cards-wrapper {
+    padding: 1rem 1rem; }
+  .card {
+    max-width: calc(100vw - 4rem); } }
+
+@media screen and (max-width: 450px) {
+  .info {
+    display: block;
+    text-align: center; }
+  .info h1 {
+    margin: 0; } }
+
+input, textarea {
+  font-size: 16px;
+  color: #EAF2F2;
+  background: transparent;
+  border-top: 0px;
+  border-right: 0px;
+  border-left: 0px;
+  border-bottom: 2px solid #EAF2F2; }
+
+input {
+  height: 50px;
+  width: 210px; }
+
+textarea {
+  color: #EAF2F2;
+  height: 70px;
+  width: 210px; }
+
 * {
   box-sizing: border-box; }
 
@@ -294,6 +453,10 @@ section {
   #portfolio {
     margin-top: 10px; } }
 
+@media (min-width: 740px) {
+  #projects-title {
+    height: 100vh; } }
+
 .mt-1 {
   margin-top: 10px; }
 
@@ -302,6 +465,15 @@ section {
 
 .mt-3 {
   margin-top: 30px; }
+
+.mb-1 {
+  margin-bottom: 10px; }
+
+.mb-2 {
+  margin-bottom: 20px; }
+
+.mb-3 {
+  margin-bottom: 30px; }
 
 html, body {
   background: #131313;
